@@ -1,0 +1,230 @@
+
+CSS3 PROPERTIES LIST : 01
+=========================
+
+🚧  background color 
+background-color: rgb(209, 24, 0);
+
+
+🚧  text color 
+color: rgb(32, 24, 2);
+
+
+
+🚧 border and ouline 
+-> 10 style in css: dotted , dashed , solid , groove , ridge , inset , outset , double , none ,hidden
+-> size: em, px, % etc.
+-> color: any color
+-> position: top, bottom, left, right  
+
+border: 1px double rgb(116, 114, 119);
+border-top: 1px double rgb(116, 114, 119);
+
+outline: 1px solid rgb(75, 124, 2);
+outline-bottom: 1px solid rgb(75, 124, 2);
+
+outline-offset: 5px ;
+
+
+
+
+🚧 margin, padding 
+-> position: top, bottom, left, right  
+-> value: px, em, rem 
+
+margin-top : 20px;
+margin : auto;
+margin : 20px 40px;
+margin : 0px auto;
+margin : 20px 30px 25px 15px 
+
+padding-bottom : 30px;
+
+
+
+
+🚧 height, width, min-height, min-width, max-height max-width 
+-> value: px, em, rem, vh, vw, % etc
+
+width: 30%;
+min-height: 250px;
+max-height: 50vh;
+
+min-width: 100px;
+max-width: 200px;
+
+
+
+
+🚧 box-sizing
+box-sizing : border-box; 
+box-sizing : content-box;
+
+
+
+
+🚧 overflow 
+-> 4 value. auto / hidden / scroll / visible 
+
+overflow :value;
+overflow-x: value;
+overflow-y:value; 
+
+
+    
+🚧 border-radius
+border-top-left-radius : 5px ; 
+border-top-right-radius : 5px ; 
+border-bottom-right-radius : 5px ; 
+border-bottom-left-radius : 5px;
+
+border-radius : 20px 20px 50px 32px; // Clock-wise 
+border-radius : 20px 32px; // x and y  
+border-radius : 20px; // all of the side
+
+
+
+
+🚧 box-shadow
+box-shadow : vertical  horizontal  blur   area   color ;
+box-shadow : 5px  5px 5px 5px red ;  (-5px ) reverse
+box-shadow : 5px  5px 5px 5px red  inset ; // into the object
+box-shadow : 5px  5px 5px 5px red , 8px 8px 7px 8px green;  // multiple
+
+
+
+
+🚧 float and Clear 
+float: left;
+float: right;
+
+clear : right;
+clear : left;
+clear : both;
+
+
+
+🚧 font-properties
+font-size : 5px / 100% / 1em / xx-small / x-small / small / medium / larger / xx-large / x-large / smaller / larger
+font-family : arial, verdana;  
+font-weight : bold / bolder/ lighter / 100-900  ;
+font-variant : normal / small-caps ;  
+font-style : normal / italic / oblique  ; 
+line-height : 5px ;
+
+
+how to center a text : 
+div{
+    width: 400px;
+    border: 1px solid;
+    height: 400px;
+}
+
+div h1{
+    line-height: 400px;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+🚧 text-properties
+text-align : right / left / center / justify;
+text-align-last : paragraph last line sapce; 
+text-transform : uppercase / lowercase / none / capitalize; 
+letter-spacing : 0px 
+word-spacing : 0px
+text-indent : 0px  //first line space
+
+
+
+
+🚧 text decoration
+text-decoration-line : overline/ underline / line- through /none ;
+text-decoration-color : all color ;
+text-decoration-style : wavy / solid / double / dashed / dotted; 
+
+text-decoration : line color style ;   
+text-decoration : overline red solid ;
+
+text-underline-offset : 2px;  
+text-decoration-thickness : 10px ;   
+
+
+
+
+🚧 white-space 
+- nowrap -> one line contant
+- pre -> same as to pre tag
+- pre-line -> it works like pre tag , but dosen't work like no-wrap
+- pre-warp -> it works like pre tag , but dosen't work like no warp
+
+- word-warp : break-word / normal; 
+- word-break : break-all / keep-all;
+
+
+
+
+🚧 text-shadow
+text-shadow : right  down  blur  color;   
+text-shadow : 5px  5px 1px red ;
+
+
+
+🚧 text-overﬂow 
+USEWITH, white-space:nowrap; and overﬂow:hidden;
+-> text-overﬂow : clip (default) 
+-> text-overﬂow : ellipsis (....) 
+-> text-overﬂow : string   ( [...] ) 
+
+
+🚧 writing mode
+
+#CHROMO 
+: vertical - rl
+: vertical -lr 
+
+#FIRE-FOX 
+: sideways-rl 
+: sideways -lr 
+
+text-orientation : upright;
+text-orientation : horaizantal-tb // default value
+
+
+
+🚧 column 
+column-count: 3;  
+column-gap: 50px; 
+
+column-rule-style : solid, double, etc ; 
+column-rule-color : all color ; 
+column-rule-width : px ; 
+
+column-rule : width style color -> sort from
+column-width : px ; auto set column   
+column-span : all / none ;  -> upper heading  
+
+
+
+🚧 @font-face and how to use google font ? https://www.fontsquirrel.com/ 
+
+@font-face{
+  font-family :sans; 
+  src:url(web_fonts/OpenSans-Regular-webfont.woff);          
+
+}
+p { font-family : sans; }
+
+
+
+🚧 unit - em, rem, vh, vw, vmin
+ 
+
+🚧 list-style
+list-style-image : url( img path /location ); //https://www.iconfinder.com/iconsets/finance-152
+list-style-position : inset / outset;
+list-style-type : upper-alpha / lower-alpha / upper-roman / lower-roman / circle / disc / square / none ;
+list-style-type: 'text' / '🔸' / etc ;
+  
+list-style : type position url ; //shortcut

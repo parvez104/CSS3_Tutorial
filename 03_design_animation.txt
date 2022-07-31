@@ -1,0 +1,170 @@
+
+CSS3 PROPERTIES LIST : 03
+=========================
+
+https://animate.style/
+
+
+
+🚧 Translation Porperty : Smooth-Use
+
+transition-property: All ;
+transition-duration: 2s;
+
+transition-timing-function : value ;
+ease (slow first slow)
+linear ( first)
+ease-in ( slow first)
+ease-out ( first slow)
+ease-in-out ( ease type)
+steps-stat
+steps-end
+steps(number)
+cubic-bezier ( t,t,t,t);
+
+transition-delay: time ;
+
+transition : property / duration / transition-timing-function / delay ;
+transition : all 5s ease-in 1s ;
+
+
+
+🚧 Transfrom 2D Prpperty :
+
+-rotate()
+transform : rotate(25deg);
+
+-skew() 
+skewX(deg)
+skewY(deg)
+skew(x,y)
+
+-translate()
+translateX(px)
+translateY(px)
+translate(px px)
+
+-scale (number)
+scaleX()
+scaleY(2)
+scale(2,4)
+
+
+
+🚧 Transfrom 3D Porperty
+
+#Perspective : This is Use at Parent Div --- 🔸
+perspective(800px) - 
+perspective(100px) - 
+perspective-origin: (60deg);
+
+#Transfrom-Origin --- 🔸
+transfrom-origin :left, right, top,bottom, bottom left, bottm right, right top,left top, center,center center
+transform : rotate(25deg) ;
+transform-origin : right/left , bottom/top ;
+transform-origin : 20% 60% ;
+
+
+#Rotate Z & 3D --- 🔸
+rotateX(25deg) ;
+rotateY(25deg) ;
+transform : perspective (800px) rotate Z ( ) ;
+transform : perspective (800px) rotate 3D ( x y z );
+transform : perspective (800px) rotate-3D (80deg, 30deg, 45deg) ;
+
+
+#Translate Z & 3D --- 🔸
+transform : perspective(800px) translateZ( )
+translate3D ( x,y,z )
+translate3D ( 50px 30px 30px )
+
+
+#ScaleZ & 3D --- 🔸
+transform: perspective(800px) scaleZ ();
+scale 3D ( x,y,z )
+scale 3D ( 2,3,5)
+
+
+
+🚧 transfrom-style : flat / preserve-3d 
+.mother {transform-style: preserve-3d;}
+
+
+🚧 backface-visibility : hidden / visible
+
+
+
+🚧 Animation 
+
+@keyframes name { 
+    from { css property }
+    to {css property }
+}
+
+@keyframes name {
+    0%{css property}
+    25%{css property}
+    50%{css property}
+    75%{css property}
+    100%{css property} 
+}
+
+animation-name : parbez;
+animation-duration : 2s;
+
+animation-timing-function: value;
+- ease (slow first slow)
+- linear ( first)
+- ease-in ( slow first)
+- ease-out ( first slow)
+- ease-in-out ( ease type)
+- steps-stat
+- steps-end
+- steps(number)
+- cubic-bezir ( t,t,t,t);
+
+animation-delay : 2s; ➡ start time
+animation-iteration-count : 2s /infinite;
+animation-direction : normal /reverse/alternate /alternate-reverse;
+anmition-fill-mode : none/forward (end 100%) /backward (start 0%)/both ;
+anmition-play-state : running / paused ; // this property usefull with hover 
+
+Animation : name /duration /time-function /delay /iteration-count /duration ;
+Animation : parvez 2s ease 1s infinite reverse ;
+
+
+
+🚧 object-fit : responsive image. 
+
+object-fit: fill/contain/cover/sacle-down/none;
+object -position : left/right/top/bottom/center/px/ % ;
+
+
+
+🚧 user-select: auto / text / all / none;
+
+
+🚧 box-decoration-break : slice / clone ;
+
+
+🚧 useing with <q> tag
+
+quotes : "&" "£" ;
+quotes: '👉' '👈';
+
+
+
+🚧 border-image
+- border-image-source : url ( " name ")
+- border-image-slice : 25px ;
+- border-image-repeat : repeat, stretch, round, space ;
+- border-image-width : 10px ;
+- border-image-outset : 10px ;
+
+
+- border-image : url ( " name ") /slice / width / outset/repeat ;
+- border-image : url ( " i10.jpg ") / 25px / 15px / 20px /round ;
+- Border-image : linear-gradiant ( red, yellow) 27/ 15px ;
+
+Gooooo --> border-image genaretor website
+

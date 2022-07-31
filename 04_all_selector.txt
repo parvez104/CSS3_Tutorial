@@ -1,0 +1,217 @@
+
+CSS3 PROPERTIES LIST : 04
+=========================
+
+🚧 advanced selector
+
+👉 simple:  #id, .class, * {}, #content * {}
+
+👉 combinators-selector
+
+p span {}
+div p span {}
+.box p {}
+
+ul > li {}  //direct children 
+.box > p {}   
+
+ul + p {} //first sibiling
+div + li {}
+
+div ~ li {} //all next sibiling
+ul ~ p {}
+
+
+👉 attributes
+
+<img src="flower.jpg" alt="image of flower">
+
+tag/class/id [ attr ] 
+tag/class/id [ attr = val ] 
+tag/class/id [ attr ^= val ] 
+tag/class/id [ attr |= val ]
+tag/class/id [ attr $= val ]
+tag/class/id [ attr *= val ]
+tag/class/id [ attr ~= val ]
+
+- img [ alt ] { }
+- input [ type = text ] { }
+- img [ alt^= "image" ] { }
+- img [ alt |="image"] { }
+- img [ alt $="flower "] { }
+- img [ alt *="of "] { } 
+- img [ alt ~="flower "] { }
+
+
+
+
+👉 pseudo-classes 
+
+:first-child
+:last-child 
+
+:nth-child()
+:nth-child(2n)
+:nth-last-child()
+
+:nth-of-type()
+:nth-last-of-type()
+
+:only-child
+
+:only-of-type
+
+:first-of-type
+:last-of-type
+
+:empty
+
+:not(.name/#name/p/any tag or class name)
+
+:lang(en/fr/dr/bn or others language)
+
+:link
+:hover
+:visited
+:active
+:target
+
+:focus
+:checked
+:disabled
+:enabled
+:required
+:optional
+
+:in-range
+:out-of-range
+
+:read-only
+:read-write
+
+:valid
+:invalid
+:default
+:root
+:is
+:focus-within
+
+
+👉 pseudo-elements : only effect on the elements like, p, li, b tag
+
+::first-letter
+::first-line
+::selection
+::placeholder
+::file-selector-button
+
+span:hover::after{
+    content: "Go to Website";
+}
+span:hover::before{
+    content: "Go to Website";
+}
+
+
+
+🚧 attr() function 
+
+p:hover::after{
+       content: attr(data-anyattr);
+}
+
+
+
+🚧 counter 
+counter-reset : my-conuter 1 ;
+content : "counter" (my-counter) ;
+counter-increment : my-conuter 1 ;
+
+
+🚧 caret-color //input box couser color
+input {caret-color: red; }
+
+
+
+🚧 @import css file, basically it's use to css file on the top line.
+
+@import "color.css";
+@import "print.css" print;
+@import "media-1024.css" screen and (max-width:1024px);
+@import url("");
+
+
+🚧 use icon font
+
+
+🚧 scrollbar
+::-webkit-scrollbar
+::-webkit-scrollbar-thumb
+::-webkit-scrollbar-track
+::-webkit-scrollbar-corner
+
+
+
+🚧 display: flow-root;
+
+
+
+🚧 currentColor : parent elements color
+color: currentColor;
+border: 2px solid currentColor;
+
+
+
+🚧 marker, li marker color
+::marker{
+    /* content: "🏆"; */
+    color: red;
+}
+
+
+🚧 !important, same class and same property, then we use important
+color: blue !important;
+
+
+🚧 :placeholder-shown 
+
+
+🚧 scroll-behavior, use it html tag
+html { scroll-behavior: smooth; }
+
+
+
+🚧 scroll-snap
+
+On the Container
+scroll-sanp-type : x mandatory / y mandatory / both mandatory / x proximity / y proximity ;
+
+On the Others 
+scroll-sanp-align : start/end/center;
+
+
+🚧 backdrop-filter
+backdrop-filter:blur(2px)
+
+
+🚧 Text-orientation
+
+
+🚧 accent-color, radio and checbox color
+input{
+    accent-color: rgb(255, 0, 191);
+}
+
+
+🚧 display-table
+
+🚧 prefers-color
+
+🚧 Aspect Ratio
+
+🚧 display mode
+
+🚧 full-screen
+
+🚧 min(), max()
+

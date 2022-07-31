@@ -1,0 +1,127 @@
+  
+      🚧 Direction ;
+  
+       display: grid;
+
+       grid-template-columns: 200px auto 200px ;
+       grid-template-columns: 50% 200px auto;
+       grid-template-columns: 1fr 1.3fr 1fr;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-columns: repeat(2,200px)1fr;
+
+       grid-template-rows: 200px 200px ; -----> rows are same 
+
+       
+      🚧 Gaps :
+   
+       grid-row-gap:34px;
+       grid-column-gap:34px;
+       grid-gap:34px 34px;
+       margin:0;
+
+
+      🚧 Positioning :
+
+       grid-row-start:2;
+       grid-row-end: 3;
+       grid-row:2/3;
+
+       grid-column-start: 1;
+       grid-column-end: 2;
+       grid-column:1/2;
+       
+       grid-area: r-start/c-start/r-end/c-end;
+       grid-area: 1/3/2/4;
+       
+
+      🚧 Spanning :
+
+       grid-row:2/span3;
+       grid-column:1/span 2;
+
+
+      🚧 Nameing :  Type-01
+
+       grid-template-columns:repeat(3,[col-start] 1fr [col-end]) ;
+       grid-template-rows: 
+       [Header-start]120px[Header-end   Menu-start]60px[Menu-end   Box-start]180px[Box-end   Content-start]400px[Content-end   Footer-start]50px[Footer-end];    
+        
+       grid-row: Header-start/Header-end;
+       grid-column: col-start 1/ col-end 3;
+
+      
+      🚧 Nameing : Type-02
+
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows:120px 60px 100px 400px 50px;
+       grid-template-areas: 
+       "header header header"
+       "menu menu menu"
+       "box1 box2 sidebar" 
+       "content content sidebar"
+       "footer footer footer"
+       ;
+
+      .items1{
+        background-color: orangered;  
+        grid-area: header;
+       }
+      .items2{
+        background-color: rgb(21, 33, 104);
+        grid-area: menu;
+       }
+
+
+      🚧 Min Max value :
+ 
+       max-content
+       min-content
+       minmax(150px, min-content)
+       minmax(150px,400px)
+
+
+
+      🚧 Explicit -grid
+
+       grid-auto-rows: 100px;
+       grid-auto-flow: column;/row 
+       grid-auto-columns: .5fr;
+
+
+       
+      🚧 gird-item-align
+
+       vertical align ------
+       align-item : start/end/center/strech -- all
+       align-self :start/end/center/strech -- single
+       Horizontal align ------
+       justify-item :start/end/center/strech -- all
+       justify-self : start/end/center/strech -- single
+
+       place-item : align-item  justify-item
+       place-self : align-self  justify-self
+
+
+      🚧 Tracks-aligning
+      justify-content:start/end/center/stretch/space-around/space-between/space-evenly
+      align-content:start/end/center/stretch/space-around/space-between/space-evenly
+       
+
+      🚧 grid-auto-flow: row dense;
+
+
+      🚧 Auto-fill , Auto-fit ---- responsive
+
+       grid-template-columns:repeat(auto-fit,minmax(100px,1fr)) ;
+       grid-template-rows: repeat(2,100px);  
+
+
+      🚧 Fit-Content: like max-width
+
+      grid-template-column : fit-content(200px)
+      fit-content(300px) 1fr ;
+
+      🚧 Order:4/0/etc...;
+
+    

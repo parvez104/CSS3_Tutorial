@@ -1,0 +1,241 @@
+
+CSS3 PROPERTIES LIST : 02
+=========================
+
+🚧 background-image 
+background-image : url(i8.png);
+background-image : url(i8.png), url( i8.png ); 
+background-repeat : repeat / no-repeat / repeat - x / repeat - y / round / equal / space;
+background-position : left-top / left-center / left-bottom / right-top / right-center / right-bottom / center-left / center-right/ center-center / 50% left, 75% top / 50px , 75px;
+
+Sort hand ★
+background : url repeat position ;
+background : color url repeat position ;
+
+
+🚧 background-attachment 
+background-attachment : fixed /scoll ;
+
+
+🚧 background-size
+background-size : 305px ;
+background-size : 305px 200px ;
+background-size : 100% ;
+background-size : 100% 100% ;
+background-size : cover/contain ;
+
+
+🚧 background-origin : background image position;
+padding-box - default
+border-box
+content-box
+
+
+🚧 background-clip : background color position;
+padding-box - default
+border-box
+content-box
+
+
+🚧 opacity and rgba
+opacity : 0.1 - 1 // background opacity with img and contant
+background : rgba ( 255, 0, 0, 0.3) // without img & contant
+
+
+
+🚧 gradient properties : https://cssgradient.io/
+
+01.Linear :
+background : linear-gradient (red,yellow);
+background : linear-gradient (to left/right / etc ,red,yellow) ;
+linear-gradient (-40 deg ,red,yellow) ;
+linear-gradient(rgba(255,110,30,.6),rgba(255,0,450,.3))
+
+02.Repeating-linear-gradient 
+background : repeating-linear-gradient(red , yellow 10% , green 20%) ;
+
+03.Radial 
+background : radial-gradient(red,yellow);
+background : radial-gradient(circle, red 10%,yellow 20%)
+background : radial-gradient(closest-side at 10% 10%, red,yellow)
+background : radial-gradient(farthest-side at 10% 10%, red,yellow)
+background : radial-gradient(closest -corner at 10% 10%, red,yellow)
+background : radial-gradient(farthest-corner at 10% 10%, red,yellow)
+
+04.Repeating-radial-gradient 
+background: repeating-radial-gradient:(red ,yellow 10%,green 20%);
+background: repeating-radial-gradient:(circle red ,yellow 10%,green 20%);
+
+https://www.gradient-animator.com/
+
+
+
+🚧 background-blend-mode -> linear-gradient + image = marge 
+
+background-image:linear-gradient(red,yellow),url("i8.png");
+background-blend-mode:hue / normal / multiply / screen / overlay / darken / lighten / color-burn / luminosity / exclusion /hard-light / soft-light / difference / color-dodge / saturation;
+
+
+
+🚧 mix-blend-mode -> background image
+
+background-image:url("i8.png");
+background-blend-mode:hue / normal / multiply / screen / overlay / darken / lighten / color-burn / luminosity / exclusion /hard-light / soft-light / difference / color-dodge / saturation;
+
+
+🚧 display : none / inline / inline-block / block / list-item; 
+
+
+
+🚧 visibity : hidden / visible / collapse (table row,column hidden)
+
+
+
+🚧 position
+position :  absolute/ relative/ static/ fixed / sticky; 
+helping property - left / right / top / bottom;
+
+position : relative;
+left: 20px;
+
+parent-div --> position : relative
+child-div  --> position : absolute , left / right / top / bottom
+
+
+
+🚧 z-index : its use with position property
+z-index : 1 / -1 / 2 / 3 
+
+
+
+🚧 @media : 
+
+    @media screen and (max-width:1200px){
+        body{
+            background: orange;
+        }
+    }
+
+    @media screen and (max-width:1000px){
+        body{
+            background: rgb(11, 151, 34);
+        }
+    }
+    @media screen and (max-width:700px){
+        body{
+            background: rgb(136, 6, 108);
+        }
+    }
+    @media screen and (max-width:480px){
+        body{
+            background: rgb(255, 0, 0);
+        }
+    }
+
+
+
+
+🚧 table properties 
+
+border-spacing : 10px;
+border-spacing : vertical (co) horaizantal (ro) ;
+border-spacing : 10px 20px;
+
+border-collapse : collapse / separate;
+vertical -align : top / bottom / middle ;
+caption-side : top / bottom
+empty-cell : hide / show
+table-layout : fixed / auto
+
+tr : hover { background : gray }
+tr : nth-child ( even ) { background : gray }
+
+
+
+🚧 resize : use with textarea object and overflow properties
+resize : vertical / horizontal / both / none;
+
+
+
+🚧 cursor : wait /alias / resize /copy /grab/ none / help/move /resize /cell /auto/ text/ url /zoom-in /zoom-out.........etc 
+
+
+
+🚧 :root
+
+:root {
+    --main-color : red ;  //global 
+    --main-color : green;
+    --main-font  : arial;
+    --fix-font-size  : 19px;
+}
+
+
+.classA {
+    color : var( --main-color) ;  
+}
+
+.classB {
+    background-color : var( --main-bg-color); //local
+}
+
+
+
+🚧 clac() : mathematical example use ( + - * / )
+
+width : calc (100% - 26px)
+width : clac (100% - 2px - 2px - 2px - 2px)
+width : calc (100% / 26px)
+
+background-img : url (logo.png) ;
+background-position : calc(100% - 26px)  calc(100% - 20px) ;
+
+
+
+🚧 clip path property :
+
+Circle : 
+clip-path:value(radius at X Y)
+clip-path : circle ( 30% at 400px 300px )
+clip-path : circle ( 30% at 50% 50% )
+
+Ellipse : 
+clip-path : value ( width height at x y )
+clip-path : ellipse ( % % at 400px 300px )
+
+Inset : 
+clip-path : value ( top right bottm left )
+clip-path : inset ( px px px px ) / ( % % % %)
+
+Polygon :
+clip-path : value ( width height at x y )
+clip-path : polygon ( % %, % %, % %, % %,)
+
+Very Easy & First Work Go to :- https://bennettfeely.com/clippy/
+
+https://css-tricks.com/almanac/properties/c/clip-path/
+
+
+🚧 shape outside 
+clip-path : inset(30% 0% 5% 0%);
+shape-outside : inset(30% 0% 5% 0%);
+shape-margin : 5px;
+
+
+🚧 effact on the image
+filter: blur(2px); 
+filter:brightness(250%);
+filter: contrast(200%);
+filter: drop-shadow(14px 14px 16px gray);
+filter: grayscale(80%);
+filter: hue-rotate(50deg);
+filter: invert(100%);
+filter: opacity(70%);
+filter: saturate(250%);
+filter: sepia(70%);
+filter: none;
+
+multiple filter
+filter:  blur(2px) brightness(750%);
+
+
