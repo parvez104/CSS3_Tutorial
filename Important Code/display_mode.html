@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display mode</title>
+    <style>
+        body {
+            background-color: rgb(13, 34, 196);
+        }
+
+        @media(display-mode:fullscreen) {
+            h1 {
+                color: rgb(184, 7, 200);
+            }
+
+            body {
+                background-color: rgb(13, 172, 196);
+            }
+        }
+
+        @media(display-mode:browser) {
+            h1 {
+                color: rgb(8, 133, 21);
+            }
+
+            body {
+                background-color: rgb(196, 169, 13);
+            }
+        }
+
+        @media(display-mode:minimal-ui) {
+            h1 {
+                color: rgb(186, 99, 0);
+            }
+
+            body {
+                background-color: rgb(196, 13, 13);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS : @media display-mode</h1>
+    <P>It is use with brower mode </P>
+
+</body>
+
+</html>

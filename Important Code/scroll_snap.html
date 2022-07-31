@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll-Snap</title>
+    <style>
+ 
+
+
+    html{
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+        transition: 1.4s;
+    }
+
+    body{
+        margin: 0 ;
+        padding: 0;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: antiquewhite;
+        text-align: center;
+        line-height: 80vh;
+        scroll-snap-align: start;
+    }
+
+    .child1{
+        background-color:rgb(221, 15, 15) ;
+    }
+    .child2{
+        background-color:rgb(15, 221, 25) ;
+    }
+    .child3{
+        background-color:rgb(60, 15, 221) ;
+    }
+    .child4{
+        background-color:rgb(221, 163, 15) ;
+    }
+    .child5{
+        background-color:rgb(221, 15, 118) ;
+    }
+ 
+
+    </style>
+</head>
+<body>
+
+ <div class="container child1"><h1>Section 01</h1></div>
+ <div class="container child2"><h1>Section 02</h1></div>
+ <div class="container child3"><h1>Section 03</h1></div>
+ <div class="container child4"><h1>Section 04</h1></div>
+ <div class="container child5"><h1>Section 05</h1></div>
+  
+</body>
+</html>

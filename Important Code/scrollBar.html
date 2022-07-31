@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Bar Styling</title>
+    <style>
+        .test {
+            height: 400px;
+            width: 60%;
+            padding: 17px;
+            overflow: auto;
+            text-align: justify;
+            border: 0px solid rgb(186, 186, 190);
+            outline: 2px solid rgb(229, 229, 236);
+            outline-offset: 8px;
+            border-radius: 9px;
+            box-shadow: -0px 0px 10px 10px rgb(218, 214, 214);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: smaller;
+        }
+
+
+
+        .test::-webkit-scrollbar {
+            width: 9px;
+        }
+
+        .test::-webkit-scrollbar:hover {
+            background-color: rgb(0, 248, 166);
+        }
+
+        .test::-webkit-scrollbar-track {
+            /* background:rgb(139, 131, 131); */
+            /* border-radius: 2px; */
+            box-shadow: inset 0px 0px 6px rgb(231, 226, 226);
+            border-radius: 10px;
+        }
+
+        .test::-webkit-scrollbar-thumb {
+            background: linear-gradient(rgb(3, 3, 131), rgb(28, 0, 5));
+            border: .2px solid rgb(61, 57, 57);
+            border-radius: 10px;
+        }
+
+        img {
+            margin: auto;
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>CSS : Scroll-Bar Styleing</h1>
+
+    <div class="test">
+        <img src="https://picsum.photos/950/550" alt="">
+        <h3>Forest</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, pariatur. Odit dicta, nesciunt soluta
+            maiores numquam ratione deserunt fugiat molestiae libero sequi natus rem expedita! Tenetur in perspiciatis
+            consequatur pariatur beatae ad a esse iure ipsa repellendus nesciunt quibusdam harum similique, repudiandae
+            unde mollitia doloremque quis laboriosam porro. Explicabo, consequatur, maiores dicta magni id ratione,
+            aperiam quos dolorem incidunt at perspiciatis cumque nisi? Tempore totam id velit quasi quibusdam assumenda
+            excepturi iste amet, cupiditate laboriosam nobis, sit atque architecto culpa dolore soluta vero voluptate
+            eaque deserunt fugit. Totam maiores officiis dolores ab. Eligendi labore aliquam beatae, assumenda magnam
+            aperiam vel. Possimus est, odit, nobis quae accusamus sit, velit sequi aperiam illum odio labore id iure
+            sapiente nihil. Officia possimus similique rerum eveniet provident, deleniti repellendus, iste eius animi
+            aliquam error maxime at autem quibusdam, hic fugiat. Non consequatur dicta autem eaque unde, minus suscipit
+            molestiae ratione sint qui, aliquam quam consectetur nulla quae deleniti dolore beatae doloremque maxime
+            omnis perferendis distinctio voluptas. Beatae expedita maxime dolore praesentium, cumque accusamus officiis
+            nulla repudiandae esse, quia minus hic nemo molestiae illo animi iusto fugiat a reprehenderit impedit
+            dolorem laboriosam recusandae, dolor minima. Vero debitis omnis iste et laboriosam quos saepe dignissimos
+            eos sunt aperiam culpa dolorem temporibus officia excepturi esse a, animi quasi facilis voluptatum facere
+            porro! Eligendi ratione atque cumque, sapiente, natus iure repudiandae beatae expedita provident, voluptas
+            cupiditate! Ea et quia tenetur molestiae, similique possimus quo hic nobis alias obcaecati a autem officiis
+            minus magnam aut quaerat ipsam enim dolore debitis. Modi ad cupiditate velit, itaque distinctio beatae?
+            Dignissimos odio, autem perspiciatis ullam repellendus inventore odit pariatur enim ab consectetur incidunt.
+            Reprehenderit commodi fuga expedita sed, quaerat quisquam ut a eum ipsam tenetur unde est natus delectus!
+            Fugit, velit, nihil reiciendis tempore nemo sunt molestiae voluptas deserunt eum veritatis perferendis.</p>
+
+        <img src="https://picsum.photos/950/549" alt="">
+        <h3>Village</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, pariatur. Odit dicta, nesciunt soluta
+            maiores numquam ratione deserunt fugiat molestiae libero sequi natus rem expedita! Tenetur in perspiciatis
+            consequatur pariatur beatae ad a esse iure ipsa repellendus nesciunt quibusdam harum similique, repudiandae
+            unde mollitia doloremque quis laboriosam porro. Explicabo, consequatur, maiores dicta magni id ratione,
+            aperiam quos dolorem incidunt at perspiciatis cumque nisi? Tempore totam id velit quasi quibusdam assumenda
+            excepturi iste amet, cupiditate laboriosam nobis, sit atque architecto culpa dolore soluta vero voluptate
+            eaque deserunt fugit. Totam maiores officiis dolores ab. Eligendi labore aliquam beatae, assumenda magnam
+            aperiam vel. Possimus est, odit, nobis quae accusamus sit, velit sequi aperiam illum odio labore id iure
+            sapiente nihil. Officia possimus similique rerum eveniet provident, deleniti repellendus, iste eius animi
+            aliquam error maxime at autem quibusdam, hic fugiat. Non consequatur dicta autem eaque unde, minus suscipit
+            molestiae ratione sint qui, aliquam quam consectetur nulla quae deleniti dolore beatae doloremque maxime
+            omnis perferendis distinctio voluptas. Beatae expedita maxime dolore praesentium, cumque accusamus officiis
+            nulla repudiandae esse, quia minus hic nemo molestiae illo animi iusto fugiat a reprehenderit impedit
+            dolorem laboriosam recusandae, dolor minima. Vero debitis omnis iste et laboriosam quos saepe dignissimos
+            eos sunt aperiam culpa dolorem temporibus officia excepturi esse a, animi quasi facilis voluptatum facere
+            porro! Eligendi ratione atque cumque, sapiente, natus iure repudiandae beatae expedita provident, voluptas
+            cupiditate! Ea et quia tenetur molestiae, similique possimus quo hic nobis alias obcaecati a autem officiis
+            minus magnam aut quaerat ipsam enim dolore debitis. Modi ad cupiditate velit, itaque distinctio beatae?
+            Dignissimos odio, autem perspiciatis ullam repellendus inventore odit pariatur enim ab consectetur incidunt.
+            Reprehenderit commodi fuga expedita sed, quaerat quisquam ut a eum ipsam tenetur unde est natus delectus!
+            Fugit, velit, nihil reiciendis tempore nemo sunt molestiae voluptas deserunt eum veritatis perferendis.</p>
+
+        <img src="https://picsum.photos/950/551" alt="">
+        <h3>City</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, pariatur. Odit dicta, nesciunt soluta
+            maiores numquam ratione deserunt fugiat molestiae libero sequi natus rem expedita! Tenetur in perspiciatis
+            consequatur pariatur beatae ad a esse iure ipsa repellendus nesciunt quibusdam harum similique, repudiandae
+            unde mollitia doloremque quis laboriosam porro. Explicabo, consequatur, maiores dicta magni id ratione,
+            aperiam quos dolorem incidunt at perspiciatis cumque nisi? Tempore totam id velit quasi quibusdam assumenda
+            excepturi iste amet, cupiditate laboriosam nobis, sit atque architecto culpa dolore soluta vero voluptate
+            eaque deserunt fugit. Totam maiores officiis dolores ab. Eligendi labore aliquam beatae, assumenda magnam
+            aperiam vel. Possimus est, odit, nobis quae accusamus sit, velit sequi aperiam illum odio labore id iure
+            sapiente nihil. Officia possimus similique rerum eveniet provident, deleniti repellendus, iste eius animi
+            aliquam error maxime at autem quibusdam, hic fugiat. Non consequatur dicta autem eaque unde, minus suscipit
+            molestiae ratione sint qui, aliquam quam consectetur nulla quae deleniti dolore beatae doloremque maxime
+            omnis perferendis distinctio voluptas. Beatae expedita maxime dolore praesentium, cumque accusamus officiis
+            nulla repudiandae esse, quia minus hic nemo molestiae illo animi iusto fugiat a reprehenderit impedit
+            dolorem laboriosam recusandae, dolor minima. Vero debitis omnis iste et laboriosam quos saepe dignissimos
+            eos sunt aperiam culpa dolorem temporibus officia excepturi esse a, animi quasi facilis voluptatum facere
+            porro! Eligendi ratione atque cumque, sapiente, natus iure repudiandae beatae expedita provident, voluptas
+            cupiditate! Ea et quia tenetur molestiae, similique possimus quo hic nobis alias obcaecati a autem officiis
+            minus magnam aut quaerat ipsam enim dolore debitis. Modi ad cupiditate velit, itaque distinctio beatae?
+            Dignissimos odio, autem perspiciatis ullam repellendus inventore odit pariatur enim ab consectetur incidunt.
+            Reprehenderit commodi fuga expedita sed, quaerat quisquam ut a eum ipsam tenetur unde est natus delectus!
+            Fugit, velit, nihil reiciendis tempore nemo sunt molestiae voluptas deserunt eum veritatis perferendis.</p>
+    </div>
+
+
+
+</body>
+
+</html>

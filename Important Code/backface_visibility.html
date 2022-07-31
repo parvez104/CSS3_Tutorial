@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backface </title>
+    <style>
+        body {
+            font-family: verdana;
+            background-color: rgb(232, 232, 240);
+        }
+
+        h1 {
+            margin-bottom: 60px;
+        }
+
+        .card {
+
+            height: 280px;
+            width: 280px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -140px;
+            perspective: 600px;
+            /* outline: 5px solid; */
+            outline-offset: 5px;
+
+
+        }
+
+        .content {
+
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+        }
+
+
+        .card:hover .content {
+            transform: rotateY(-180deg);
+        }
+
+
+
+        .font,
+        .back {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background: rgb(255, 255, 255);
+            color: rgb(46, 37, 70);
+            backface-visibility: hidden;
+            font-size: 60px;
+            text-align: center;
+            line-height: 250px;
+        }
+
+
+        .back {
+
+            background: orangered;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS3 : Backface-Visibilty Property</h1>
+
+    <div class="card">
+        <div class="content">
+            <div class="font">Font</div>
+            <div class="back">Back</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen</title>
+    <style>
+
+
+        /*CSS : https://uigradients.com/#Frost */
+
+        #box {
+            background-color: rgb(43, 142, 229);
+            width: 400px;
+            height: 340px;
+            object-fit: contain;  /* for-image */
+        }
+
+        #box:fullscreen {
+            /* background-color: blueviolet; */
+            /* any css property */
+            background: #C33764;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #1D2671, #C33764);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        /* #box:not(:fullscreen ) p{
+            color: rgb(41, 12, 226);
+        } */
+
+
+        /* when the object are not fullsecreen mode or normal mode*/
+        #box:not(:fullscreen) {
+            /* background-color: rgb(12, 211, 226); */
+            /* any css property */
+            background: #000428;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #004e92, #000428);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #004e92, #000428);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <!--🟢 for-div -->
+    <!-- <div id="box">
+        <p>I'm in fullscreen mode !</p>
+    </div> -->
+
+
+    <!--🟢 for-image -->
+    <img src="https://images.unsplash.com/photo-1654222964731-087410584804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" id="box"> <br>
+
+    <button onclick="document.getElementById('box').requestFullscreen();">full-screen mode</button>
+
+</body>
+</html>

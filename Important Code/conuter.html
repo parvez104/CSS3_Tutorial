@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+
+        
+        body {
+            padding: 30px;
+            counter-reset: mycounter 0;
+        }
+
+
+        h3::before {
+            /* content: "Chapter " counter(mycounter) " : "; */
+            content: "Chapter " counter(mycounter, upper-alpha) " : ";
+            counter-increment: mycounter 1;
+            color: rgb(22, 22, 175);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <h2>CSS : Counter-Increment & Counter-Reset</h2>
+
+    <h3>The Heading </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates modi, porro vitae, veritatis atque
+        alias consequatur ullam similique odit impedit at eum adipisci distinctio assumenda, quibusdam nisi cumque
+        neque!</p>
+
+
+    <h3>The Heading </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates modi, porro vitae, veritatis atque
+        alias consequatur ullam similique odit impedit at eum adipisci distinctio assumenda, quibusdam nisi cumque
+        neque!</p>
+
+    <h3>The Heading </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates modi, porro vitae, veritatis atque
+        alias consequatur ullam similique odit impedit at eum adipisci distinctio assumenda, quibusdam nisi cumque
+        neque!</p>
+
+    <h3>The Heading </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates modi, porro vitae, veritatis atque
+        alias consequatur ullam similique odit impedit at eum adipisci distinctio assumenda, quibusdam nisi cumque
+        neque!</p>
+
+    <h3>The Heading </h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum voluptates modi, porro vitae, veritatis atque
+        alias consequatur ullam similique odit impedit at eum adipisci distinctio assumenda, quibusdam nisi cumque
+        neque!</p>
+
+</body>
+
+</html>

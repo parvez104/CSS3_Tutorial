@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable Var() Function</title>
+    <style>
+
+        :root {
+            --main-shadow: -0px 0px -20px 10px rgb(245, 238, 238);
+            --main-color : green;
+            --main-font  : arial;
+            --fix-font-size  : 19px;
+        }
+
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        :root {
+            --main-color: rgb(224, 7, 7);
+        }
+
+
+        .header {
+            
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            /* background: rgba(11, 1, 31, 0.918); */
+            background: var(--main-color);
+            line-height: 40px;
+            box-shadow: var(--main-shadow);
+        }
+
+
+        .header h1 {
+            margin: auto;
+            font-size: 46px;
+
+        }
+
+        .header h1 a {
+            text-decoration: none;
+            color: rgb(236, 234, 235);
+        }
+
+        .menubar {
+            position: sticky;
+            left: 0;
+            top: 0;
+        }
+
+        .menubar ul {
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        .menubar ul li {
+            display: inline-block;
+
+        }
+
+        .menubar ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 12px 9px;
+            color: rgb(13, 55, 92);
+            font-size: 17px;
+
+
+        }
+
+        .menubar ul li a:hover {
+            background: var(--main-color);
+            color: beige;
+
+        }
+
+        .content {
+            background: url(FILE/i-can-handle-multi-tasks-cropped-shot-successful-girl-typing-keyboard-making-notes-while-looking-computer-screen-studying-new-business-graphic-there-is-no-time-rest.jpg) no-repeat bottom;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .lear {
+            background-color: rgba(12, 12, 12, 0.808);
+            color: azure;
+            padding: 20px;
+
+
+        }
+
+        .footer {
+            width: 100%;
+            padding: 4px;
+            box-sizing: border-box;
+            background: var(--main-color);
+            line-height: 20px;
+            color: rgb(200, 202, 202);
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="header">
+        <h1><a href="#">Mlwbd.Net</a></h1>
+    </div>
+
+    <div class="menubar">
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hindi Movies</a></li>
+            <li><a href="#">English Movies</a></li>
+            <li><a href="#">Hindi Dubbed</a></li>
+            <li><a href="#">Tamil Movies</a></li>
+            <li><a href="#">Korean Movies</a></li>
+            <li><a href="#">TV Show</a></li>
+            <li><a href="#">Web Seies</a></li>
+            <li><a href="#">New Upadte</a></li>
+            <li><a href="#">Movies Rquest</a></li>
+            <li><a href="#">Subscribe</a></li>
+        </ul>
+    </div>
+
+
+    <div class="content">
+
+        <div class="lear">
+            <h1>CSS : Variable Var() Function</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum doloribus eligendi sed tempora,
+                doloremque dolor ducimus ea in maxime aperiam! Facilis repellendus voluptas fuga! Consequatur ipsam sunt
+                in dignissimos temporibus!</p>
+
+            <h1>01.Global-Var()</h1>
+            <img src="global.png" alt="" width="50%">
+
+            <h1>02.Local-Var()</h1>
+            <img src="local.png" alt="" width="50%">
+
+            <h1>Exmple-Var</h1>
+            <img src="exmple.png" alt="" width="80%">
+
+            <h1>Our Nesty Life</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia nisi voluptatem possimus tempora
+                quaerat eveniet facilis inventore reprehenderit minus sequi sapiente, vel atque laboriosam dolorum, quam
+                iusto quo modi, laborum hic? Debitis, deserunt nostrum error expedita sapiente eos voluptatibus velit
+                sit consectetur, magnam officiis quo doloribus optio ut exercitationem laudantium perferendis et
+                nesciunt quod quaerat? Architecto, modi alias tenetur, earum, odio ut deserunt adipisci veritatis
+                molestiae libero eum sit eligendi delectus magni sint excepturi eius. Doloribus facere error nobis dolor
+                perspiciatis. Unde natus officiis consectetur iste delectus accusantium libero quibusdam. Incidunt ut
+                itaque aliquid eum amet recusandae mollitia inventore reiciendis.</p>
+
+            <img src="g3.jpg" alt="" width="50%">
+
+            <h2>Traffic Jam</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi soluta ad adipisci, eligendi tenetur
+                fugiat, ea omnis, voluptate culpa obcaecati deleniti earum velit fugit consequatur aspernatur facere?
+                Eveniet alias ratione doloribus nobis ducimus architecto temporibus enim sit, ullam optio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt minus dicta ab ipsum? Neque vero
+                consequuntur unde quaerat nobis doloribus eius similique eligendi iusto soluta blanditiis mollitia
+                officiis expedita, esse, iste sint odio saepe sequi impedit excepturi! Exercitationem dolores molestias,
+                repellendus facere saepe fugit amet sint pariatur asperiores rerum similique explicabo labore aliquid
+                nulla aperiam eveniet officiis iusto? Rerum nemo animi iusto minus explicabo tempora aliquid quaerat
+                esse aliquam?</p>
+
+            <h2>Air Polution</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia dolorum nesciunt cum repudiandae corporis
+                non et perferendis eveniet unde sint, cumque, ipsa minima atque provident autem facilis nostrum tempora
+                molestiae sapiente reiciendis officia iure? Quasi saepe sint rerum porro consequuntur nobis mollitia
+                corrupti laudantium voluptatum, possimus perspiciatis vitae, neque iure!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quis soluta expedita minima velit
+                possimus, odio deserunt facere amet? Id delectus rem consequatur iusto architecto quaerat porro optio
+                facilis, laborum suscipit eum laudantium corrupti pariatur autem nemo quam officia eos cum aperiam dicta
+                dolores numquam? Eum impedit non adipisci doloribus quia autem libero quibusdam placeat inventore
+                explicabo odit, sit id.</p>
+
+            <img src="g2.jpg" alt="" width="50%">
+
+            <h2>Sound Polution</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia dolorum nesciunt cum repudiandae corporis
+                non et perferendis eveniet unde sint, cumque, ipsa minima atque provident autem facilis nostrum tempora
+                molestiae sapiente reiciendis officia iure? Quasi saepe sint rerum porro consequuntur nobis mollitia
+                corrupti laudantium voluptatum, possimus perspiciatis vitae, neque iure!</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatum qui quae omnis, dicta
+                repudiandae magnam eveniet maxime hic. Quidem ad inventore omnis saepe, iusto atque suscipit, voluptates
+                maiores corrupti eligendi ducimus veniam non nisi ex debitis hic asperiores laudantium. Eos voluptates
+                omnis exercitationem sapiente a, esse deleniti quibusdam hic, ullam repellat dignissimos, cum
+                repudiandae dolores odio eligendi quaerat animi voluptas quam modi ipsa provident eaque. Aliquid quis
+                libero provident amet consequatur eaque dolorem nisi laboriosam iste eos accusantium non, nostrum ipsa
+                porro magni recusandae ad natus repudiandae corrupti. Dolorem, totam deserunt reprehenderit rem dolorum
+                molestiae consequuntur dolore. Repellat ipsa, voluptate veritatis est perspiciatis voluptates voluptas
+                aliquam explicabo, qui cumque velit sequi laborum, laudantium vitae? Qui error magni magnam laudantium,
+                atque suscipit eius. Qui recusandae consequatur harum praesentium possimus molestias a saepe fugit. Ea
+                quos repudiandae ullam enim necessitatibus delectus culpa sapiente odit eligendi sequi laboriosam dicta
+                suscipit, eum aperiam voluptas eveniet. Ducimus laborum, minima in magni dolor esse optio repellendus
+                voluptas deleniti, quod sapiente. Minima fugit quam fuga illum reprehenderit iure cupiditate explicabo
+                et voluptatibus inventore in consectetur nemo vitae, at blanditiis quod qui id perspiciatis enim vero
+                eius. Rerum iste, voluptate atque quos ex et sunt modi architecto?</p>
+
+            <img src="working.jpg" alt="" width="50%">
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur dicta excepturi rem ad modi minus
+                ducimus facere quia maiores asperiores. Perferendis, maxime sequi similique aliquid omnis excepturi
+                tempore! Sapiente temporibus doloremque eum vitae earum dolorum obcaecati laboriosam. Aliquid rem
+                asperiores, quod debitis placeat molestiae modi ab. Accusamus fuga impedit id atque dolore fugiat labore
+                unde esse error corrupti, reiciendis harum recusandae necessitatibus quae quod, mollitia perferendis
+                quia, asperiores tempora nobis veritatis omnis modi! Commodi vero perferendis non repellat deserunt?
+                Libero numquam assumenda explicabo, atque tempora laboriosam rem. Natus molestiae vel voluptas, debitis
+                dolores inventore id cumque. Soluta quos quod quas!</p>
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+
+        <p>Copyright : Nesty.edu 2018-2021</p>
+    </div>
+
+</body>
+
+</html>

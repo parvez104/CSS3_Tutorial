@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferes Color Scheme</title>
+    <style>
+        /* 
+        change the css with windows or mac defafult color mode setting 
+        */
+
+        body {
+            background: greenyellow;
+        }
+
+        @media(prefers-color-scheme : light) {
+            body {
+                background: rgb(6, 29, 73);
+                /* any property */
+            }
+        }
+
+        @media(prefers-color-scheme : dark) {
+            body {
+                background: rgb(65, 6, 73);
+                /* any property */
+            }
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Preferes Color Scheme</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ad temporibus optio unde voluptate beataelaborum est maxime nostrum eius quos repellat, atque magnam, perspiciatis sint magni, iusto dolor voluptatum.</p>
+
+</body>
+</html>

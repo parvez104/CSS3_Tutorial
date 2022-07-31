@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:is pseodu</title>
+    <style>
+     body{
+         padding: 40px;
+     }
+
+     /*:is(.test1,.test2,.test3) p{
+         color: rgb(240, 6, 6);
+         font-size: 18px;
+     }
+     :is(.test1,.test2,.test3) h1{
+         color: rgb(18, 240, 6);
+     } */
+    
+     .test1 :is(h1,h2,p){
+         color: blue;
+     }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="testing test1">
+        <h1>Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident laudantium soluta maiores accusamus facere quisquam error incidunt sapiente et quod saepe labore quam ipsa, reiciendis aperiam omnis eius culpa?</p>
+        <h2>Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident laudantium soluta maiores accusamus facere quisquam error incidunt sapiente et quod saepe labore quam ipsa, reiciendis aperiam omnis eius culpa?</p>
+        
+        <hr>
+    </div>
+    <div class="testing test2">
+        <h1>Heading 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident laudantium soluta maiores accusamus facere quisquam error incidunt sapiente et quod saepe labore quam ipsa, reiciendis aperiam omnis eius culpa?</p>
+        <hr>
+    </div>
+    <div class="testing test3">
+        <h1>Heading 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit provident laudantium soluta maiores accusamus facere quisquam error incidunt sapiente et quod saepe labore quam ipsa, reiciendis aperiam omnis eius culpa?</p>
+        <hr>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder-Shown</title>
+    <style>
+        body {
+            font-size: 21px;
+        }
+
+        .i {
+            height: 42px;
+            width: 300px;
+            font-size: 20px;
+            padding: 0 9px;
+            caret-color: rgb(34, 0, 255);
+            border: 3px solid rgb(99, 93, 138);
+            border-radius: 3px;
+        }
+
+        button {
+            height: 42px;
+            width: 80px;
+            font-size: 20px;
+            padding: 0 px;
+            border: 3px solid rgb(99, 93, 138);
+            border-radius: 3px;
+            color: rgb(99, 93, 138);
+
+        }
+
+        input {
+            height: 22px;
+            width: 22px;
+            font-size: 20px;
+            padding: 0 9px;
+            caret-color: rgb(34, 0, 255);
+            border: 3px solid rgb(99, 93, 138);
+            border-radius: 3px;
+        }
+
+        button:hover {
+            background-color: rgb(99, 93, 138);
+            color: rgb(255, 255, 255);
+        }
+
+
+        input:invalid {
+            border-color: red;
+        }
+
+        input:placeholder-shown {
+            background-color: rgb(245, 245, 245);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Css: Placeholder-Shown</h1>
+    <input type="text" class="i" placeholder="Enter Your Name..."><br><br>
+    <input type="email" class="i" placeholder="Enter Your Email..."> <br><br>
+    <input type="password" class="i" placeholder="Enter Your Password..." id="myInput" maxlength="8" required> <br><br>
+    
+    <!-- An element to toggle between password visibility -->
+    <input type="checkbox" onclick="myFunction()"> Show Password <br><br>
+    <button>Send</button>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>
